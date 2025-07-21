@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡️</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafiz Ali | Personal Portfolio</title>
+    <meta name="description" content="SENSEI's personal portfolio showcasing web development projects and skills.">
+    <meta name="keywords" content="React, TypeScript, Tailwind CSS, Frontend Developer, Portfolio, Web Developer, Nafiz Ali">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      /* Custom styles for the app */
+      html {
+        scroll-behavior: auto; /* Fix for instant manual scrolling */
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+      }
+      .text-glow {
+        text-shadow: 0 0 8px currentColor;
+      }
+      .button-glow {
+        box-shadow: 0 0 5px theme('colors.cyan.500'), 0 0 10px theme('colors.cyan.600');
+        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+      }
+      .button-glow:hover {
+        box-shadow: 0 0 15px theme('colors.cyan.400'), 0 0 30px theme('colors.cyan.500');
+        transform: translateY(-2px);
+      }
+      .button-glow-purple {
+        box-shadow: 0 0 5px theme('colors.purple.500'), 0 0 10px theme('colors.purple.600');
+        transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+      }
+      .button-glow-purple:hover {
+        box-shadow: 0 0 15px theme('colors.purple.400'), 0 0 30px theme('colors.purple.500');
+        transform: translateY(-2px);
+      }
+      .input-glow:focus {
+        outline: none;
+        border-color: theme('colors.cyan.400');
+        box-shadow: 0 0 10px theme('colors.cyan.500');
+      }
+      .card-glow {
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .card-glow:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 15px theme('colors.purple.500'), 0 0 5px theme('colors.purple.400');
+      }
+      .typing-cursor {
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: theme('colors.cyan.400'); }
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #080c16; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0e7490;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #06b6d4;
+      }
+    </style>
+
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        // --- IMPORTANT: EMAILJS SETUP (STEP 1 of 2) ---
+        // To enable the contact form, you first need to initialize EmailJS with your Public Key.
+        // 1. Sign up for a free account at https://www.emailjs.com.
+        // 2. In your EmailJS dashboard, navigate to the "Account" > "API Keys" section.
+        // 3. Find your "Public Key" and paste it below, replacing "YOUR_PUBLIC_KEY".
+        emailjs.init({
+          publicKey: "VMaEeegwv-sAQKbyo", // <-- PASTE YOUR PUBLIC KEY HERE
+        });
+    })();
+  </script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-B5SakXKu.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
