@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Experience from './components/Experience'; 
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import type { Theme } from './types';
@@ -47,10 +48,14 @@ const App: React.FC = () => {
         <About />
         <Projects />
         <Skills />
+        <Experience />
         <Certifications />
         <Contact />
       </main>
       <footer className="text-center py-8 bg-black/50 border-t border-t-cyan-900/50">
+          <p className="text-xs text-gray-500 mb-4 px-4">
+            Note: The "Download CV" button requires a file named <code>nafiz-ali-resume.pdf</code> placed in the root directory of the project.
+          </p>
           <p className="text-gray-400">&copy; {new Date().getFullYear()} Nafiz Ali.<br /> All rights reserved.</p>
       </footer>
     </div>
