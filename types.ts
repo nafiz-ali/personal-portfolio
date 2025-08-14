@@ -18,6 +18,15 @@ export interface Skill {
   icon: ReactNode;
 }
 
+export interface Experience { 
+  id: number; 
+  title: string; 
+  company: string; 
+  date: string; 
+  details: string[]; 
+  icon: ReactNode; 
+  certificateUrl?: string; 
+} 
 export interface Certification {
   id: number;
   title: string;
